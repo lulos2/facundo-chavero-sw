@@ -1,0 +1,72 @@
+.text-conteiner {
+    height: auto;
+    margin: 25px;
+}
+
+.video-container {
+    position: relative;
+    text-align: center;
+    margin: 25px;
+}
+
+video {
+    height: 500px;
+    border-radius: 20px;
+}
+
+.steps-list {
+    background-color: var(--secondaryColorDark2);
+    text-align: start;
+    padding: 20px;
+    border: #2a6094;
+    border-radius: 20px;
+    margin-top: 90px;
+}
+
+.steps-list li {
+    margin: 20px;
+    background-color: var(--secondaryColor);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.steps-list li h4 , .steps-list h3 {
+    margin: 0;
+}
+
+.for-who {
+    margin-top: 100px;
+    background-color: var(--secondaryColorDark2);
+    border-radius: 20px;
+    padding: 15px;
+    width: 93%;
+    display: inline-block;
+}
+
+.video-explain-container {
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+.intro {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.aling-left {
+    margin-bottom: 70px;
+    margin-top: 70px;
+    padding-left: 50px;
+    text-align: start;
+    display: grid;
+}
+.aling-left div {
+    display: inline-flex;
+    align-content: flex-end;
+    align-items: center;
+}
+
+.aling-left i {
+    margin-right: 20px;
+}

@@ -1,0 +1,131 @@
+@import url('footer.css');
+@import url('header.css');
+@import url('main.css');
+
+:root {
+    --primaryColorLight2: #74b0f5;
+    --primaryColorLight1: #5695d3;
+    --primaryColor: #5086c1;
+    --primaryColorDark1: #3a77b0;
+    --primaryColorDark2: #2a6094;
+    --secondaryColorLight2: rgba(255, 255, 255, 0.20);
+    --secondaryColorLight1: #767279;
+    --secondaryColor: #3F3C3C;
+    --secondaryColorDark1: #252525;
+    --secondaryColorDark2: #252525;
+    --black: #060c10;
+    --white: #cde1ff;
+    --highLight:#FFC300;
+    --success:#04AA6D;
+    --error:#FF2020;
+    --warning:#FFE141;
+
+}
+*::-webkit-scrollbar {
+    width: 12px;
+    height: 0;
+}
+*::-webkit-scrollbar-track {
+    background-color: var(--black);
+}
+*::-webkit-scrollbar-thumb {
+    background-color: var(--primaryColorDark2);
+    border-radius: 20px;
+    border: 3px solid var(--black);
+}
+
+body,h1,h2,h3,h4,h5,h6,p{
+    font-family: "Roboto Light", sans-serif;
+    color: var(--white);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--black);
+}
+
+.button-primary {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 17px 48px;
+    color: var(--white);
+    background-color: var(--primaryColor);
+    height: 48px;
+}
+.button-primary:hover {
+    transform: scale(1.04);
+    background-color: var(--primaryColorDark1);
+}
+
+.button-secondary {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: var(--white);
+    background-color: var(--primaryColorDark1);
+    height: 48px;
+    margin: 30px;
+}
+.button-secondary:hover {
+    background-color: var(--primaryColorLight2);
+}
+
+
+.button-alternative {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color, border-color, color, box-shadow, filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 14px 18px;
+    color: #616467;
+    box-shadow: inset 0 0 0 2px #616467;
+    background-color: transparent;
+    height: 48px;
+}
+.button-alternative:hover {
+    color: var(--white);
+    background-color: #616467;
+}
+
