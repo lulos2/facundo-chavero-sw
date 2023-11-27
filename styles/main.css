@@ -7,10 +7,25 @@
     position: relative;
     text-align: center;
     margin: 25px;
+    width: 70%;
+    display: inline-grid;
 }
 
-video {
-    height: 500px;
+.video-container video {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.video-container iframe {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
 }
 
@@ -70,3 +85,14 @@ video {
 .aling-left i {
     margin-right: 20px;
 }
+
+@media only screen and (max-width: 1000px) {
+    .video-container {
+        position: relative;
+        text-align: center;
+        margin: 25px;
+        width: 90%;
+    }
+
+}
+
