@@ -69,7 +69,7 @@ body {
     padding: 17px 48px;
     color: var(--white);
     background-color: var(--primaryColor);
-    height: 48px;
+    height: fit-content;
 }
 .button-primary:hover {
     transform: scale(1.05);
@@ -97,7 +97,7 @@ body {
     background-color: transparent;
     border: 3px solid;
     border-color: var(--primaryColor);
-    height: 48px;
+    height: fit-content;
     margin: 30px;
 }
 .button-secondary:hover {
@@ -127,10 +127,15 @@ body {
     color: #616467;
     box-shadow: inset 0 0 0 2px #616467;
     background-color: transparent;
-    height: 48px;
+    height: fit-content;
 }
 .button-alternative:hover {
     color: var(--white);
     background-color: #616467;
 }
 
+div{
+    transform: translateY(30px);
+    transition: opacity 1s, transform 1s;
+    opacity: 0;
+}
