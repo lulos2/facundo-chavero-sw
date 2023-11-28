@@ -51,6 +51,7 @@ body {
 
 .button-primary {
     display: inline-flex;
+    justify-content: center;
     align-items: center;
     outline: none;
     cursor: pointer;
@@ -79,6 +80,7 @@ body {
 .button-secondary {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     outline: none;
     cursor: pointer;
     font-size: 14px;
@@ -108,6 +110,7 @@ body {
 .button-alternative {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     outline: none;
     cursor: pointer;
     font-size: 14px;
