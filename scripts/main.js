@@ -3,17 +3,13 @@ animateOnScroll();
 
 function isInViewport(element) {
     let rect = element.getBoundingClientRect();
-    let bottom;
-    if(window.screenX<800){
-        bottom = window.innerHeight + 1000;
-    }else{
-        bottom = window.innerHeight;
-    }
+    let threshold = window.innerWidth < 800 ? 1000 : 0;
+    console.log(threshold)
     return (
-        rect.top  >= 0 &&
-        rect.left  >= 0 &&
-        rect.bottom  <= (bottom || document.documentElement.clientHeight) &&
-        rect.right  <= (window.innerWidth || document.documentElement.clientWidth)
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom - threshold <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right - threshold <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
 function animateOnScroll() {
